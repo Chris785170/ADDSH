@@ -74,7 +74,7 @@ void Heap<T>::remove(T value) {
   // TO BE IMPLEMENTED
   for (int i = 0; i<values.size(); i++){
     if(values.at(i) == value){
-      values.erase(values.at(i));
+      values.erase(i);
     }
   }
   int initial_parent_index = floor(values.size() / 2) - 1;
